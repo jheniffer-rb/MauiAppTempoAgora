@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppTempoAgora.MainPage">
+
+    <ScrollView>
+        <StackLayout Spacing="10" Margin="10">
+
+            <Button Text="Obter Localização" Clicked="Button_Clicked" />//Botão para obter a localização
+
+            <Label Text="Latitude:" />
+            <Entry x:Name="lbl_latitude" Text="37,421998333333335" />//Campo para exibir a latitude
+
+            <Label Text="Longitude:" />
+            <Entry x:Name="lbl_longitude" Text="-122,084" />//Campo para exibir a longitude
+
+            <Button Text="Obter Placemark" Clicked="Button_Clicked_1" />//Botão para obter o endereço
+
+            <Label x:Name="lbl_reverso" Text="Dados gerais de Local" />//Label para exibir o endereço
+
+            <Button Text="Obter Previsão do Tempo" Clicked="Button_Clicked_2" />//Botão para obter a previsão do tempo
+
+            <Label x:Name="lbl_previsao" />//Label para exibir a previsão do tempo
+
+            <WebView x:Name="mapa" HeightRequest="500">//Exibir o mapa
+            </WebView>
+
+            
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
